@@ -77,7 +77,7 @@ We have offices in Dallas, Austin, Houston, San Antonio and Fort Worth. Whether 
 </div>
 
 
-
+<?php echo file_get_contents('foot.php');?>
 
 </body>
 </html>

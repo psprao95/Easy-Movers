@@ -10,7 +10,7 @@
 
 <body>
 <div class="navbar">
-  <a href="home.php"> <i class="fa fa-home"></i></a>
+  <a href="home.php"> Home</a>
   <a href="aboutus.php">About</a>
   <a href="whyeasy.php">Why Easy Movers</a>
   <div class="dropdown">
@@ -30,9 +30,10 @@
     <a href="quote.php">Get a Quote</a>
 
     <a href="contactus.php">Contact Us</a>
-    <a href="dashboard.php">My DashBoard <i class="fa fa-car"></i></a>
+    <a href="dashboard.php">My DashBoard</a>
     <a href="login.php">Login</a>
     <a href="signup.php">Signup</a>
+      <a href="cart.php"> Cart <i class="fa fa-shopping-cart"></i> </button></a>
 
 </div>
 </body>

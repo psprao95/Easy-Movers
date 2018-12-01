@@ -29,12 +29,15 @@
   <li><h4>Email: easymove@gmail.com<h4></li>
   <li>Email: easymove@gmail.com</li>
   <li>Email: easymove@gmail.com</li>
+  <ul>
 
-  =
   </div>
   </div>
   </div>
   </div>
 
+
+  <?php
+  echo file_get_contents('foot.php');?>
 </body>
   </html>

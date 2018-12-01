@@ -62,9 +62,7 @@ if(empty($_POST["user"]) || empty($_POST["pwd"]))
       mysqli_query($conn,$my_query);
     }
 
-
-
-
+    echo file_get_contents('foot.php');
 
 ?>
 

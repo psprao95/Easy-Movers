@@ -49,6 +49,6 @@ if(isset( $_SESSION['user_name']))
 </div>
 </div>
 
-
+<?php echo file_get_contents('foot.php');?>
 </body>
 </html>

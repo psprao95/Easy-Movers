@@ -56,11 +56,12 @@ if(empty($_POST["user"]) || empty($_POST["pwd"]))
 
     }
 
-
-
-
 ?>
 
 </div>
+
+
+<?php
+echo file_get_contents('foot.php');?>
 </body>
 </html>

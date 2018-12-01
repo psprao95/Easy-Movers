@@ -61,11 +61,13 @@
 
 
     <div class="col-lg-3"></div>
-
   </div>
     </div>
 
-</div>
+</div><br/>
 
+
+<?php
+echo file_get_contents('foot.php');?>
 </body>
 </html>

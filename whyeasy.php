@@ -11,6 +11,7 @@
 <body>
   <?php
   echo file_get_contents('navbar.php');
+
   ?>
 
 
@@ -122,7 +123,6 @@ Whether it’s apartments to offices, moving just next-door, or across Texas, we
 </div>
 
 
-
-
 </body>
+<?php echo file_get_contents('foot.php');?>
 </html>

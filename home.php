@@ -57,6 +57,8 @@ With so much at stake during a move, Easy Movers  exceeds traditional moving exp
 </div>
 </div>
 
+<?php
+echo file_get_contents('foot.php');?>
 </body>
 
 </html>
