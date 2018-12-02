@@ -46,9 +46,14 @@ if(empty($_POST["user"]) || empty($_POST["pwd"]))
         $fname=$row['first_name'];
         $lname = $row['last_name'];
       }
-      echo "<h2>Welcome to Easy Movers, ". $fname." " .$lname."</h2>";
       $_SESSION['user_name']=$u;
-      header('Location:dashboard.php');
+      if($u=='admin')
+      {
+  header('Location:admin.php');
+      }
+      else{
+        header('Location:dashboard.php');
+      }
     }
     else
     {

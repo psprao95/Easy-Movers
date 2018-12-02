@@ -24,8 +24,10 @@
       <div class="col-sm-1">
       </div>
 
-    <div class="col-sm-11">
-      <div id="test">
+<div class="col-sm-11">
+<div id="test">
+<h2>My Cart <i class="fa fa-shopping-cart"> </i></h2>
+
 
 <?php
 session_start();
@@ -41,11 +43,13 @@ if(!isset($_SESSION['user_name']))
     $conn =mysqli_connect($host,$username,$password,$db_name);
     $u = $_SESSION['user_name'];
 
-    echo "<h3>My Cart</h3>";
-    $name=$_GET['name'];
-    $ship=$_GET['ship'];
-    $pack=$_GET['pack'];
-    $quan=$_GET['quan'];
+
+    $name=$_POST['name'];
+    $ship=$_POST['ship'];
+    $pack=$_POST['pack'];
+    $quan=$_POST['quan'];
+
+
 
     $result= mysqli_query($conn,"select * from cart where username='$u' and item_name='$name'");
     if(mysqli_num_rows($result)==0)
@@ -60,7 +64,7 @@ if(!isset($_SESSION['user_name']))
       {
         $q=$rop['quantity'];
       }
-      $q=$q+1;
+      $q=$q+$quan;
       $total=$q*($ship+$pack);
       mysqli_query($conn,"update cart set quantity=$q, total_charge=$total where username='$u' and item_name='$name'");
     }
@@ -69,15 +73,29 @@ if(!isset($_SESSION['user_name']))
 
 
     $result=mysqli_query($conn,"select * from cart where username='$u'");
-    echo "<table class='table table-striped'> <tr><th>Item Name</th><th>Shipping Charge</th><th>Packing Charge</th><th>Quantity</th><th>Total Charge</th><th></th></tr>";
+    echo "<table text-align='center' class='table table-striped'> <tr><th>Item Name</th><th>Shipping Charge</th><th>Packing Charge</th><th>Quantity</th><th>Total Charge</th><th></th></tr>";
+    $tot=0;
       while($rop=mysqli_fetch_array($result))
       {
-        echo "<tr><td>".$rop['item_name']."</td><td>$".$rop['shipping_charge']."</td><td>$".$rop['packing_charge']."</td><td>".$rop['quantity']."</td><td>$".$rop['total_charge']."</td><td><a class='bt btn-danger' href='delete.php'></a></td></tr>";
+        $tot+=$rop['total_charge'];
+        $item=$rop['item_name'];
+        echo "<tr><td>".$rop['item_name']."</td><td>$".$rop['shipping_charge']."</td><td>$".$rop['packing_charge']."</td><td>".$rop['quantity']."</td><td>$".$rop['total_charge']."</td><td><a class='btn btn-danger' href='delete-from-cart.php?name=$item'>Remove</a></td></tr>";
       }
       echo "</table>";
 
 
+
+
 ?>
+
+
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-3"><a class="btn btn-primary" href="dashboard.php">Continue shopping</a></div>
+  <div class="col-sm-3"><a class="btn btn-light">Cart Total: $<?php echo $tot?>.00</a></div>
+  <div class="col-sm-3"><a class="btn btn-warning" href="delete-from-cart.php?all=1">Clear Cart</a></div>
+  <div class="col-sm-2"><a class="btn btn-success">Checkout</a></div>
+
 
   </div>
   </div>
@@ -85,4 +103,5 @@ if(!isset($_SESSION['user_name']))
   </div>
 
 </body>
+
 </html>

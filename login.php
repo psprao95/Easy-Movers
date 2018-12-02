@@ -2,7 +2,12 @@
 session_start();
 if(isset( $_SESSION['user_name']))
 {
-  header('Location:dashboard.php');
+  if($_SESSION['user_name']=='admin')
+  {
+    header('Location:admin.php');
+  }
+  else{
+  header('Location:dashboard.php');}
 } ?>
 <html>
 <head>

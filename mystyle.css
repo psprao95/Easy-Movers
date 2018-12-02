@@ -62,9 +62,9 @@ text-decoration: none;}
 
 #test,#new,#regis{
   background-color: lightgray;
-  padding :20px;
+  padding :30px;
   border-radius: 10px;
-  opacity:0.9;
+  
 }
 
 
@@ -123,14 +123,4 @@ body
   border-radius: 10px;
   margin-left: 30px;
   background-color: lightgray;
-}
-
-table
-{
-  text-align: center;
-  }
-  td
-{
-  text-align: center;
-  vertical-align: middle;
 }
