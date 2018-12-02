@@ -11,8 +11,12 @@
 <body>
   <?php
   echo file_get_contents('navbar.php');
+  session_start();
+  if(isset($_SESSION['user_name']))
+  {
+    header('Location:dashboard.php');
+  }
   ?>
-
 
 
 <div id="signup">

@@ -50,7 +50,7 @@ if(!isset($_SESSION['user_name']))
         $cat_name=$temp['category_name'];
       $row=mysqli_query($conn,"select * from (item_categories join items on item_categories.category_id=items.category_id) where items.category_id='$cat_id'");
       echo "<h3>$cat_name </h3>";
-      echo "<table  class='table table-striped' > <tr><th>Item No.</th><th>Category ID</th><th>Item Name</th><th>Shipping Charge</th><th>Packing Charge</th><th></th><th></th></tr>";
+      echo "<table  class='table table-dark' > <tr><th>Item No.</th><th>Category ID</th><th>Item Name</th><th>Shipping Charge</th><th>Packing Charge</th><th></th><th></th></tr>";
 
       while($rop=mysqli_fetch_array($row))
       {

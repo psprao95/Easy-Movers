@@ -12,6 +12,7 @@
     <?php
     session_start();
     echo file_get_contents('navbar.php');
+
     ?>
 
 
@@ -44,8 +45,8 @@
         }
       }
    ?>
-<h2>Detailed Quote</h2>
-<h4>Please fill in the form below for your free online quote</h4><br/>
+<h2>Get a Quote</h2>
+<h4>Please fill in the form below to get a quote on how much your move can cost</h4><br/>
 <form id="quote" action ="estimate.php">
   <div class="row">
     <div class="col-sm-6">
@@ -139,7 +140,12 @@
             <label>Move Date</label>
             <input type="text" size=10 class="form-control">
           </div>
-        </div><br/>
+        </div>
+
+        <input type='submit' class='btn btn-primary' value=' Get a quote'>
+
+        <h4>Once you submit this form one of our customer service representatives will be contacting you shortly.
+          If you have any questions you can call us at 1800-200-200.</h4>
 
 </form>
 
@@ -150,8 +156,7 @@
 </div>
 </div>
 
-<?php
-echo file_get_contents('foot.php');?>
+<?php     echo file_get_contents('foot.php');?>
 </body>
 
 </html>
