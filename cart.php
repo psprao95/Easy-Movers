@@ -92,9 +92,9 @@ if(!isset($_SESSION['user_name']))
 <div class="row">
   <div class="col-sm-1"></div>
   <div class="col-sm-3"><a class="btn btn-primary" href="dashboard.php">Continue shopping</a></div>
-  <div class="col-sm-3"><a class="btn btn-light">Cart Total: $<?php echo $tot?>.00</a></div>
+  <div class="col-sm-3"><h4>Cart Total: $<?php echo $tot?>.00</h4></div>
   <div class="col-sm-3"><a class="btn btn-warning" href="delete-from-cart.php?all=1">Clear Cart</a></div>
-  <div class="col-sm-2"><a class="btn btn-success">Checkout</a></div>
+  <div class="col-sm-2"><a class="btn btn-success" href="order.php">Checkout</a></div>
 
 
   </div>

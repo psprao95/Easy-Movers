@@ -142,7 +142,7 @@
           </div>
         </div>
 
-        <input type='submit' class='btn btn-primary' value=' Get a quote'>
+        <input type='submit' class='form-control' class='btn btn-primary' value=' Get a quote'>
 
         <h4>Once you submit this form one of our customer service representatives will be contacting you shortly.
           If you have any questions you can call us at 1800-200-200.</h4>

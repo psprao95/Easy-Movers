@@ -32,10 +32,12 @@
 
 
 <div class="row">
-    <div class="col-sm-3"></div>
+    <div class="col-sm-2"></div>
+      <div class="col-sm-1"><b>Category</b></div>
     <div class="col-sm-2">
       <form method="POST"action="search.php">
-        <select name="categ" id="sel" >
+
+        <select name="categ" id="sel" class="form-group">
           <option>---select---</option>
           <option>Living Room</option>
           <option>Dining Room</option>
@@ -46,9 +48,10 @@
           <option>Miscellaneous</option>
           <option>Boxes</option>
         </select>
+
       </div>
       <div class="col-sm-2">
-      <input name='sea' width=8>
+      <input name='sea' width=8 placeholder="search">
     </div>
       <div class="col-sm-3">
           <input type="submit" value="Filter your search" class="btn btn-success">
@@ -95,7 +98,7 @@ if($_SESSION['user_name']=='admin')
           $name=$rop['item_name'];
           $ship=$rop['shipping_charge'];
           $pack=$rop['packing_charge'];
-          echo "<tr><td>".$id."</td><td>".$rop['item_name']."</td><td>".$rop['shipping_charge']."</td><td>".$rop['packing_charge']."</td><td><form method='POST' action=cart.php><input type='hidden' name='name' value='$name'><input type='hidden' name='pack' value='$pack'><input type='hidden' name='ship' value='$ship'><input type='text' name='quan' size=4 required></td><td><input type='submit' class='btn btn-primary' value='Add to Cart'></form></td></tr>";
+          echo "<tr><td>".$id."</td><td>".$rop['item_name']."</td><td>$".$rop['shipping_charge']."</td><td>$".$rop['packing_charge']."</td><td><form method='POST' action=cart.php><input type='hidden' name='name' value='$name'><input type='hidden' name='pack' value='$pack'><input type='hidden' name='ship' value='$ship'><input type='text' name='quan' size=4 required></td><td><input type='submit' class='btn btn-primary' value='Add to Cart'></form></td></tr>";
         }
         echo "</table><br/><br/>";
 
@@ -104,7 +107,7 @@ if($_SESSION['user_name']=='admin')
 
       else if(isset($_SESSION['category']) && $_SESSION['category']=='---select---')
       {
-        echo "<table > <tr><th>Item No.</th><th>Item Name</th><th>Shipping Charge</th><th>Packing Charge</th><th>Quantity</th><th></th></tr>";
+        echo "<table class='table  table-dark' > <tr><th>Item No.</th><th>Item Name</th><th>Shipping Charge</th><th>Packing Charge</th><th>Quantity</th><th></th></tr>";
 
         while($temp=mysqli_fetch_array($categories))
         {
@@ -120,7 +123,7 @@ if($_SESSION['user_name']=='admin')
           $name=$rop['item_name'];
           $ship=$rop['shipping_charge'];
           $pack=$rop['packing_charge'];
-          echo "<tr><td>".$rop['item_id']."</td><td>".$rop['item_name']."</td><td>".$rop['shipping_charge']."</td><td>".$rop['packing_charge']."</td><td><form method='POST' action=cart.php><input type='hidden' name='name' value='$name'><input type='hidden' name='pack' value='$pack'><input type='hidden' name='ship' value='$ship'><input type='text' name='quan' size=4 required></td><td><input type='submit' class='btn btn-primary' value='Add to Cart'></form></td></tr>";
+          echo "<tr><td>".$rop['item_id']."</td><td>".$rop['item_name']."</td><td>$".$rop['shipping_charge']."</td><td>$".$rop['packing_charge']."</td><td><form method='POST' action=cart.php><input type='hidden' name='name' value='$name'><input type='hidden' name='pack' value='$pack'><input type='hidden' name='ship' value='$ship'><input type='text' name='quan' size=4 required></td><td><input type='submit' class='btn btn-primary' value='Add to Cart'></form></td></tr>";
         }
 
       }
@@ -147,7 +150,7 @@ if($_SESSION['user_name']=='admin')
         $name=$rop['item_name'];
         $ship=$rop['shipping_charge'];
         $pack=$rop['packing_charge'];
-        echo "<tr><td>".$rop['item_id']."</td><td>".$rop['item_name']."</td><td>".$rop['shipping_charge']."</td><td>".$rop['packing_charge']."</td><td><form method='POST' action=cart.php><input type='hidden' name='name' value='$name'><input type='hidden' name='pack' value='$pack'><input type='hidden' name='ship' value='$ship'><input type='text' name='quan' size=4 required></td><td><input type='submit' class='btn btn-primary' value='Add to Cart'></form></td></tr>";
+        echo "<tr><td>".$rop['item_id']."</td><td>".$rop['item_name']."</td><td>$".$rop['shipping_charge']."</td><td>$".$rop['packing_charge']."</td><td><form method='POST' action=cart.php><input type='hidden' name='name' value='$name'><input type='hidden' name='pack' value='$pack'><input type='hidden' name='ship' value='$ship'><input type='text' name='quan' size=4 required></td><td><input type='submit' class='btn btn-primary' value='Add to Cart'></form></td></tr>";
       }
       echo "</table>";
     }

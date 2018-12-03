@@ -34,6 +34,7 @@
     <a href="login.php">Login</a>
     <a href="signup.php">Signup</a>
       <a href="cart.php"> Cart <i class="fa fa-shopping-cart"></i> </button></a>
+      <a href="order-history.php"> My Orders <i class="fa fa-history"></i> </button></a>
       <a href="logout.php">Logout</a>
 
 </div>
