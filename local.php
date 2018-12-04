@@ -21,7 +21,7 @@
   <div class="col-sm-11">
     <div id="test">
 
-<h1> Gentle Giant is YOUR Local Moving Company.</h1>
+<h1> Easy Movers is YOUR Local Moving Company.</h1>
 <p>Whether “home” for you is a 5,000-square-foot family estate or a single-bedroom condo, moving can be overwhelming. Let us shoulder the burden for you—we are Giants, after all. It’s our job as a trusted local moving company to make sure your move across town—or just across the street—happens on schedule, as planned, every time.
 </p>
 

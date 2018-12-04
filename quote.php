@@ -47,7 +47,7 @@
    ?>
 <h2>Get a Quote</h2>
 <h4>Please fill in the form below to get a quote on how much your move can cost</h4><br/>
-<form id="quote" action ="estimate.php">
+<form id="quote" action ="thanks.php">
   <div class="row">
     <div class="col-sm-6">
       <label>First Name</label>

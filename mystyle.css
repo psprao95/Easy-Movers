@@ -76,6 +76,7 @@ body
 }
 
 
+
 .row
 {
   text-align: justify;
@@ -124,4 +125,15 @@ body
   border-radius: 10px;
   margin-left: 30px;
   background-color: lightgray;
+}
+
+
+#myVideo
+{
+  position:fixed;
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+
 }

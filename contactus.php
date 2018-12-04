@@ -24,12 +24,17 @@
     <div class="col-sm-11">
       <div id="test">
 
-<h2>You can contact us at:</h2>
+<h2>You can contact us through email or call at any one of our offices</h2>
 <ul>
   <li><h4>Email: easymove@gmail.com<h4></li>
-  <li>Email: easymove@gmail.com</li>
-  <li>Email: easymove@gmail.com</li>
+  <li><h4>Dallas: 682-256-1683</h4></li>
+  <li><h4>San-Antonio: 682-453-1683</h4></li>
+  <li><h4>Houston: 682-290-1683</h4></li>
+  <li><h4>Austin: 682-278-1683</h4></li>
+  <li><h4>El-Paso: 682-200-1683</h4></li>
   <ul>
+
+    
 
   </div>
   </div>
