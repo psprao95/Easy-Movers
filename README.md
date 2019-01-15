@@ -4,13 +4,16 @@
 * Back-end technologies: PHP, MySQL
 * Project Hosted on: MAMP
 * Features include:
-  * user signup, form validation
-  * user login 
-  * user cart - remove item from cart, clear cart and checkout
-  * user checkout
-  * order history for each user
-  * search filter - text and category for displaying products to be moved by the user
-  * admin privileges for 
+  * User signup, form validation (all fields mandatory, strong password, username alphanumeric)
+  * User login 
+  * User cart 
+    * remove item from cart
+    * clear cart
+    * checkout
+  * User checkout
+  * Order history for each user
+  * Search filter - text and category for displaying products to be moved by the user
+  * Admin privileges for 
     * updating an existing product's information
     * removing a product from the menu
     * adding a new product from the menu
