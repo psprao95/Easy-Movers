@@ -1,5 +1,19 @@
 ## Easy-Movers
-A website for a moving company. Features include user signup, form validation, user login, user cart (remove item, clear cart and checkout), order history , search filter (text and category) for displaying products to user. Also includes admin privileges for product updating an existing product's information, removing a product, or adding a new product.
+* A full stack website for a moving company.
+* Front -end technologies used: HTML5, CSS, Javascript, BootStrap
+* Back-end technologies: PHP, MySQL
+* Project Hosted on: MAMP
+* Features include:
+  * user signup, form validation
+  * user login 
+  * user cart - remove item from cart, clear cart and checkout
+  * user checkout
+  * order history for each user
+  * search filter - text and category for displaying products to be moved by the user
+  * admin privileges for 
+    * updating an existing product's information
+    * removing a product from the menu
+    * adding a new product from the menu
 
 
 ## Project Requirements
